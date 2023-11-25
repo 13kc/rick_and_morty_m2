@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    flex: 0 0 200px;
+    margin: 5px;
+    background-color: rgb(21, 241, 113);
+    border: 5px solid rgb(2, 148, 2);
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px rgb(39, 211, 202);
+    font-family:monospace;
+    box-sizing: border-box;
+    padding: 25px;
+}
+.card img{
+    border-radius: 50%;
+}
+
+h2{
+ font-size: 35px;
+ color:black;
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
