@@ -3,6 +3,32 @@
     justify-content: space-around;
 }
 
+.button-1{
+    background-color: crimson;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button-2{
+    margin-right: 5px;
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button-x{
+    margin-left: 200px;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(29, 236, 243);
+}
+
+
 .card{
     flex: 0 0 200px;
     margin: 5px;

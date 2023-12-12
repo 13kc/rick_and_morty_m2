@@ -33,7 +33,6 @@ export default function SearchBar(props) {
          />
          <button onClick={handleClick}>Agregar</button>
          <button onClick={handleRandom}>Random</button>
-         <hr />
       </div>
    );
 }

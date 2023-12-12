@@ -1,0 +1,46 @@
+.form-container{
+    margin-top: 25px;
+    text-align: center;
+}
+.label-email{
+    font-weight: bold;
+    color:green; 
+    margin-right: 5px;
+    margin-left: 32px;
+}
+.form-input{
+    border: rgb(84, 240, 92);
+    padding: 10px;
+    background-color: black;
+}
+.label-password{
+    font-weight: bold;
+    color:green;
+    margin-right: 5px;
+}
+.form-input2{
+    border:  rgb(84, 240, 92);
+    padding: 10px;
+    background-color: black;
+}
+.form-buttonSubmit{
+    width: max-content;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(4, 5, 4);
+    background-color: green;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+    margin-left: 10px;
+}
+.form-buttonSubmit:hover{
+    background-color: rgb(3, 94, 23);
+}
+p{
+    color: rgb(14, 248, 14);
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+}

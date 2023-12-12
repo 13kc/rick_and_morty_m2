@@ -34,13 +34,13 @@ export default function Card(props) {
       <div className="card">
          {
             isFav ? (
-               <button onClick={handleFavorite}>❤️</button>
+               <button className='button-1' onClick={handleFavorite}>❤️</button>
             ) : (
-               <button onClick={handleFavorite}>🤍</button>
+               <button className='button-2' onClick={handleFavorite}>🤍</button>
             )
          }
 
-         <button onClick={() => props.onClose(props.id)}>X</button>
+         <button className='button-x' onClick={() => props.onClose(props.id)}>X</button>
 
          <h2>{props.name}</h2>
          <h4>Id: {props.id}</h4>

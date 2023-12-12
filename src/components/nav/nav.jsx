@@ -20,7 +20,7 @@ export default function Nav(props){
                 <button>Favorites</button>
             </NavLink>
             <button onClick={props.logout}>Logout❌</button>
-            <hr />
+            
             <SearchBar onSearch={props.onSearch} placeholder={searchBarPlaceholder} />
         </div>
     )

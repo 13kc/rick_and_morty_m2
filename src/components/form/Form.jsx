@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import validation from '../../utils/validation';
+import './Form.css';
 const banner ="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/2560px-Rick_and_Morty.svg.png";
 
 
-export default function Form(props){
+export default function Form({login}){
 
     const [userData, setUserData] = useState({
         email:"",
@@ -25,23 +27,23 @@ export default function Form(props){
        }));
     } 
 
-    const handleSubmit = event => {
-        event.preventDefaul();
-        props.login(userData);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        login(userData);
     }
 
     return (
         <div>
             <img 
             src={banner}  
-            style= {{width:"300px"}}  
+            style= {{width:"700px", marginLeft:"50px"}}  
             alt="" 
             />
             
-            <form onSubmit= {handleSubmit}> 
+            <form className="form-container"  onSubmit= {handleSubmit}> 
 
-                <label>Email</label>
-                <input 
+                <label className='label-email'>Email:</label>
+                <input className='form-input'
                     type="text"
                     key="email"
                     name= "email"
@@ -52,8 +54,8 @@ export default function Form(props){
                 
                 <p>{errors.email ? errors.email: null}</p>
 
-                <label>Password</label>
-                <input 
+                <label className='label-password'>Password:</label>
+                <input className='form-input2'
                    type="password"
                    key= "password"
                    name="password"
@@ -62,11 +64,11 @@ export default function Form(props){
                    onChange={handleChange}
                 />
                 <p>{errors.password && errors.password}</p>
-                 <hr />
+            
 
-                <button 
+                <button className='form-buttonSubmit'
                   type='submit'
-                  disabled={ errors.email || errors.password }>Enviar</button>
+                  >Enviar</button>
 
             </form>
         </div>

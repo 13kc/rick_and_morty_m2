@@ -6,7 +6,7 @@ export default function Cards({ characters, onClose}) {
    <div className='cards-container'>
     {
       !characters.length
-          ? <h2>Por favor ingresar un id...</h2>
+          ? <h2 className='texto'>Por favor ingresar un id...</h2>
           :
       characters.map(character => (
          <Card

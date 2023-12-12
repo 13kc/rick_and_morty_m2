@@ -10,8 +10,8 @@ import About from './components/about/About.jsx'
 import Detail from './components/detail/Detail.jsx'
 import NotFound from './components/NotFound/NotFound.jsx'
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom'
-import Form from './components/form/Form.jsx';
 import { useDispatch } from 'react-redux'
+import  Form  from './components/form/Form.jsx';
 
 const URL = 'https://rickandmortyapi.com/api/character';
 const API_KEY = "henrystaff"
@@ -51,7 +51,7 @@ function App() {
    const PASSWORD = '123456';
 
    function login(userData) {
-      if (userData.pasword === PASSWORD && userData.email === EMAIL) {
+      if (userData.password === PASSWORD && userData.email === EMAIL) {
          setAccess(true);
          navigate('/home');
       } else {
@@ -64,8 +64,8 @@ function App() {
    }
 
    useEffect(() => {
-      !access && navigate('/home');
-   }, [access]);
+      !access && navigate('/');
+      }, [access]);
 
 
    return (
@@ -100,8 +100,9 @@ function App() {
              />
             <Route 
              path='/'
-             element={<Form/>}
+             element={<Form login={login}/>}
                />
+            
           </Routes>
       </div>
    );
